@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Email Replacer",
+  "description": "Removes 'Mailto:'",
+  "version": "1.0",
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["background.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs", "<all_urls>"
+  ]
+}
