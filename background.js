@@ -5,7 +5,7 @@ document.querySelectorAll("a").forEach((item, _) => {
 		item.setAttribute("href", "#");
 		var email = attrib.substring(7);
         if (item.innerText.indexOf(email) == -1) {
-        	item.innerText += email;
+        	item.innerText += " " + email;
         }
     }
 });
